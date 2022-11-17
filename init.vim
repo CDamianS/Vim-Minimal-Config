@@ -43,3 +43,5 @@ let g:lightline = {
       \   'gitbranch': 'FugitiveHead'
       \ },
       \ }
+let g:pico8_config={'pico8_path': '/home/pico-8/'}
+let g:pico8_config={'imitate_console': 'FALSE'}
