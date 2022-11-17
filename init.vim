@@ -8,6 +8,8 @@ call plug#begin()
 	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 	Plug 'junegunn/fzf.vim'
 	Plug 'itchyny/lightline.vim'
+	Plug 'jiangmiao/auto-pairs'
+	Plug 'Bakudankun/PICO-8.vim'
 call plug#end()
 
 " Colorscheme
