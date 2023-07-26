@@ -22,14 +22,13 @@ set rnu
 
 " Keymaps
 let mapleader=" "
-nnoremap <leader>w <C-w>
 nnoremap <leader>fs :w<CR>
 nnoremap <leader>wq :wq<CR>
 inoremap jk <Esc>
 
 " Keymaps for NERDTree
 nnoremap <leader>op :NERDTreeToggle<CR>
-nnoremap <C-e> :NERDTreeFocus<CR>
+nnoremap <leader>e :NERDTreeFocus<CR>
 
 " Keymaps for Fuzzy
 nnoremap <leader>ff :FZF<CR>

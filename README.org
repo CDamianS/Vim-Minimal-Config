@@ -1,0 +1,49 @@
+#+title: Vim Minimal Config
+#+description: a minimalist vim config for any system
+
+** Install
+*** For Vim
+
+#+begin_src bash
+git clone https://github.com/CDamianS/Vim-Minimal-Config.git
+cp ~/Vim-Minimal-Config/init.vim ~/.vimrc
+rm -rf Vim-Minimal-Config
+#+end_src
+
+*** For NeoVim
+
+#+begin_src bash
+git clone https://github.com/CDamianS/Vim-Minimal-Config.git ~/.config/nvim
+#+end_src
+
+** Plugins used
+| Name                | Function          |
+|---------------------+-------------------|
+| nerdtree            | File Explorer     |
+| vim-fugitive        | Git               |
+| vim-polyglot        | Syntax-highlight  |
+| vim-simple-complete | Completion        |
+| vim-commentary      | Commentary        |
+| fzf                 | Fuzzy Finder      |
+| autopairs           | ()                |
+| catppuccin theme    | Coloring          |
+| vim-airline         | Better Status Bar |
+
+** Keymaps
+Leader is set to the space key
+*** General keybindings
+| Keymap     | Action              |
+|------------+---------------------|
+| <leader>w  | Save (:w)           |
+| <leader>wq | Save and exit (:wq) |
+| jk         | Exit insert mode    |
+| o          |                     |
+
+*** File search
+| Keymap     | Action              |
+|------------+---------------------|
+| <leader>op | Open File Explorer  |
+| <leader>e  | Focus File Explorer |
+| <leader>ff | Fuzzy Finder        |
+
+Plugin specific keybindings not listed
