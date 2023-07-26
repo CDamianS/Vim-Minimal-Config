@@ -2,18 +2,19 @@ call plug#begin()
 	Plug 'scrooloose/nerdtree'
 	Plug 'tpope/vim-fugitive'
 	Plug 'sheerun/vim-polyglot'
-	Plug 'zacanger/angr.vim'
 	Plug 'maxboisvert/vim-simple-complete'
 	Plug 'tpope/vim-commentary'
 	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 	Plug 'junegunn/fzf.vim'
-	Plug 'itchyny/lightline.vim'
 	Plug 'jiangmiao/auto-pairs'
-	Plug 'Bakudankun/PICO-8.vim'
+	Plug 'catppuccin/vim', { 'as': 'catppuccin' }
+	Plug 'vim-airline/vim-airline'
+	Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 " Colorscheme
-colorscheme angr
+set termguicolors
+colorscheme catppuccin_mocha
 
 " Number Config
 set number
@@ -21,27 +22,18 @@ set rnu
 
 " Keymaps
 let mapleader=" "
+nnoremap <leader>w <C-w>
+nnoremap <leader>fs :w<CR>
+nnoremap <leader>wq :wq<CR>
 inoremap jk <Esc>
-nnoremap <C-s> :w<CR>
 
 " Keymaps for NERDTree
-nnoremap <leader>e :NERDTreeToggle<CR>
+nnoremap <leader>op :NERDTreeToggle<CR>
 nnoremap <C-e> :NERDTreeFocus<CR>
 
 " Keymaps for Fuzzy
-nnoremap <leader>f :FZF<CR>
+nnoremap <leader>ff :FZF<CR>
 
 " Lightline
 set laststatus=2
 set noshowmode
-let g:lightline = {
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
-      \ },
-      \ 'component_function': {
-      \   'gitbranch': 'FugitiveHead'
-      \ },
-      \ }
-let g:pico8_config={'pico8_path': '/home/pico-8/'}
-let g:pico8_config={'imitate_console': 'FALSE'}
