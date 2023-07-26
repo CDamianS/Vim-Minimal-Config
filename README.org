@@ -37,7 +37,6 @@ Leader is set to the space key
 | <leader>w  | Save (:w)           |
 | <leader>wq | Save and exit (:wq) |
 | jk         | Exit insert mode    |
-| o          |                     |
 
 *** File search
 | Keymap     | Action              |
